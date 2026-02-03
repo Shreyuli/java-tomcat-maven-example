@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        TOMCAT_URL = 'http://localhost:8080'
+        TOMCAT_URL = 'http://localhost:9090'
         TOMCAT_CREDENTIALS = credentials('tomcat-creds')
     }
 
