@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Leogabriele/java-tomcat-maven-example.git'
+                git url: 'https://github.com/Shreyuli/java-tomcat-maven-example.git'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 bat '''
                 dir target
-                copy /Y target\\*.war "C:\\apache-tomcat-9.0.115\\webapps\\"
+                copy /Y target\\*.war "C:\\apache-tomcat-10.1.52\\webapps\\"
                 '''
             }
         }
